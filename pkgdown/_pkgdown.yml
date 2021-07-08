@@ -1,19 +1,21 @@
-url: https://github.com/emilyriederer/Rtistic
-
 navbar:
-  title: "Rtistic"
-  left:
-    - icon: fa-home
+  structure:
+    left:
+      - home
+      - articles
+      - documentation
+    right:
+      - github
+  components:
+    home:
+      icon: fas fa-home fa-lg
       href: index.html
-    - text: "Articles"
+    articles:
+      text: "Articles"
       href: articles/index.html
-    - text: "Documentation"
+    documentation:
+      text: "Documentation"
       href: reference/index.html
-    - text: "News"
-      href: news/index.html
-  right:
-   - icon: fa-github
-     href: https://github.com/emilyriederer/Rtistic/
 
 articles:
   - title: "ggplot Palette Demos"

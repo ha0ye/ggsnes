@@ -1,11 +1,16 @@
 .navbar {
-  background-color: rgb(91,155,213);
+  background-color: rgb(144,138,153);
 }
 
 #navbar a {
-color: rgb(0,112,192);
+  color: rgb(79,67,174);
 }
 
+a:hover {
+  color: rgb(181,182,228);
+}
+
+
 a.navbar-link .fa .fa-home .fa-lg {
-  color: rgb(0,112,192);
+  color: rgb(33,26,33);
 }
