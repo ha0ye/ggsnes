@@ -4,7 +4,7 @@ author: "Vignette Author"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{MY THEME ggplot theme demo}
+  %\VignetteIndexEntry{ggsnes ggplot theme demo}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 ## Set Up
 
 ```{r}
-library(Rtistic)
+library(ggsnes)
 library(ggplot2)
 ```
 
@@ -55,7 +55,7 @@ It also pairs nicely with this palette.
 
 ```{r}
 g_points + 
-  scale_color_discrete_rtistic(palette = "test", extend = TRUE) + 
+  scale_color_discrete_snes(palette = "test", extend = TRUE) + 
   labs(title = "My fancy plot") +
   theme_test()
 ```

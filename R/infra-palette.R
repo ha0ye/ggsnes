@@ -23,7 +23,7 @@ NULL
 
 #' @rdname scale_custom
 #' @export
-scale_color_discrete_rtistic <- function(palette = "test", extend = FALSE, ...){
+scale_color_discrete_snes <- function(palette = "test", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
   ggplot2::discrete_scale("colour", "test",
@@ -35,7 +35,7 @@ scale_color_discrete_rtistic <- function(palette = "test", extend = FALSE, ...){
 
 #' @rdname scale_custom
 #' @export
-scale_colour_discrete_rtistic <- scale_color_discrete_rtistic
+scale_colour_discrete_snes <- scale_color_discrete_snes
 
 #' @rdname scale_custom
 #' @export
@@ -53,7 +53,7 @@ scale_fill_discrete_rtistic <- function(palette = "test", extend = FALSE, ...){
 
 #' @rdname scale_custom
 #' @export
-scale_color_opinionated_rtistic <- function(palette = "test", ...){
+scale_color_opinionated_snes <- function(palette = "test", ...){
 
   pal <- retrieve_palette(palette, "op")[1:3]
   names(pal) <- c("good", "neutral", "bad")
@@ -63,7 +63,7 @@ scale_color_opinionated_rtistic <- function(palette = "test", ...){
 
 #' @rdname scale_custom
 #' @export
-scale_colour_opinionated_rtistic <- scale_color_discrete_rtistic
+scale_colour_opinionated_snes <- scale_color_discrete_snes
 
 #' @rdname scale_custom
 #' @export
@@ -133,7 +133,7 @@ scale_fill_continuous_rtistic <- function(palette = "test", ...) {
 
 # HELPERS ----
 
-#' Get names of all unique palettes provided in Rtistic
+#' Get names of all unique palettes provided in ggsnes
 #'
 #' @param full Whether to include full palette names (with suffixes, e.g. \code{_cont}) or just stubs
 #' @return Vector of palette name stubs or full names
@@ -144,7 +144,7 @@ scale_fill_continuous_rtistic <- function(palette = "test", ...) {
 get_rtistic_palettes <- function(full = FALSE){
 
   re <- if (full) "^.*_pal(_op|_cont|_div)?$" else "^.*_pal$"
-  grep(re, getNamespaceExports("Rtistic"), value = TRUE)
+  grep(re, getNamespaceExports("ggsnes"), value = TRUE)
 
 }
 
@@ -181,11 +181,11 @@ retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
   # attempt to get palette requrested
   pal_base <- paste0(name, "_pal")
   pal_name <- if (type == "base") pal_base else paste0(name, "_pal_", type)
-  pal <- try(utils::getFromNamespace(pal_name, "Rtistic"))
+  pal <- try(utils::getFromNamespace(pal_name, "ggsnes"))
 
   # if fails, attempt to use base palette
   if (class(pal) == "try-error") {
-    pal <- try(utils::getFromNamespace(pal_base, "Rtistic"))
+    pal <- try(utils::getFromNamespace(pal_base, "ggsnes"))
   }
 
   # if base fails, throw error

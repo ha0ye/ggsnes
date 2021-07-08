@@ -4,7 +4,7 @@ author: "Vignette Author"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{MY PALETTE palette demo}
+  %\VignetteIndexEntry{ggsnes palette demo}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 ## Set Up
 
 ```{r}
-library(Rtistic)
+library(ggsnes)
 library(ggplot2)
 ```
 
@@ -72,14 +72,14 @@ g_distrb
 Fixed-length discrete palettes use the palette's selected colors until they run out, then it uses grey for all additional levels of the aesthetic. 
 
 ```{r}
-g_points + scale_color_discrete_rtistic(palette = "test")
+g_points + scale_color_discrete_snes(palette = "test")
 g_distrb +  scale_fill_discrete_rtistic(palette = "test")
 ```
 
 Interpolated palettes extend the discrete palette by interpolating additional values.
 
 ```{r}
-g_points + scale_color_discrete_rtistic(palette = "test", extend = TRUE)
+g_points + scale_color_discrete_snes(palette = "test", extend = TRUE)
 g_distrb + scale_fill_discrete_rtistic(palette = "test", extend = TRUE)
 ```
 
@@ -90,7 +90,7 @@ points$assessment <- "neutral"
 points$assessment[points$x > 5] <- "good"
 points$assessment[points$x < 3] <- "bad"
 
-ggplot(points, aes(x, y, col = assessment)) + geom_point() + scale_color_opinionated_rtistic(palette = "test")
+ggplot(points, aes(x, y, col = assessment)) + geom_point() + scale_color_opinionated_snes(palette = "test")
 ```
 
 
