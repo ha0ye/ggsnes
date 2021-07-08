@@ -1,5 +1,5 @@
 Package: ggsnes
-Title: A collection of SNES-inspired custom palettes and themes for ggplot2
+Title: A Collection of SNES-Inspired Custom Palettes and Themes for 'ggplot2'
 Version: 0.0.1
 Authors@R: 
     person(given = "Hao",

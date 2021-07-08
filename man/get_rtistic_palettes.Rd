@@ -2,7 +2,7 @@
 % Please edit documentation in R/infra-palette.R
 \name{get_rtistic_palettes}
 \alias{get_rtistic_palettes}
-\title{Get names of all unique palettes provided in Rtistic}
+\title{Get names of all unique palettes provided in ggsnes}
 \usage{
 get_rtistic_palettes(full = FALSE)
 }
@@ -13,7 +13,7 @@ get_rtistic_palettes(full = FALSE)
 Vector of palette name stubs or full names
 }
 \description{
-Get names of all unique palettes provided in Rtistic
+Get names of all unique palettes provided in ggsnes
 }
 \examples{
 get_rtistic_palettes()

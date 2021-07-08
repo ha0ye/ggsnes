@@ -2,11 +2,11 @@
 % Please edit documentation in R/infra-palette.R
 \name{scale_custom}
 \alias{scale_custom}
-\alias{scale_color_discrete_rtistic}
-\alias{scale_colour_discrete_rtistic}
+\alias{scale_color_discrete_snes}
+\alias{scale_colour_discrete_snes}
 \alias{scale_fill_discrete_rtistic}
-\alias{scale_color_opinionated_rtistic}
-\alias{scale_colour_opinionated_rtistic}
+\alias{scale_color_opinionated_snes}
+\alias{scale_colour_opinionated_snes}
 \alias{scale_fill_opinionated_rtistic}
 \alias{scale_color_diverging_rtistic}
 \alias{scale_colour_diverging_rtistic}
@@ -16,15 +16,15 @@
 \alias{scale_fill_continuous_rtistic}
 \title{Custom color and fill scales}
 \usage{
-scale_color_discrete_rtistic(palette = "test", extend = FALSE, ...)
+scale_color_discrete_snes(palette = "test", extend = FALSE, ...)
 
-scale_colour_discrete_rtistic(palette = "test", extend = FALSE, ...)
+scale_colour_discrete_snes(palette = "test", extend = FALSE, ...)
 
 scale_fill_discrete_rtistic(palette = "test", extend = FALSE, ...)
 
-scale_color_opinionated_rtistic(palette = "test", ...)
+scale_color_opinionated_snes(palette = "test", ...)
 
-scale_colour_opinionated_rtistic(palette = "test", extend = FALSE, ...)
+scale_colour_opinionated_snes(palette = "test", extend = FALSE, ...)
 
 scale_fill_opinionated_rtistic(palette = "test", ...)
 

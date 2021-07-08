@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/ha0ye/ggsnes/workflows/R-CMD-check/badge.svg)](https://github.com/ha0ye/ggsnes/actions)
 <!-- badges: end -->
 
-The goal of ggsnes is to ...
+The goal of ggsnes is to provide custom palettes and themes for 'ggplot2' derived from the Super Nintendo / Super Famicon video game consoles and several popular games on that platform.
 
 ## Installation
 
