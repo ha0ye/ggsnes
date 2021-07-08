@@ -1,16 +1,42 @@
+:root {
+  --main-bg-color: rgb(206,201,204);
+  --secondary-bg-color: rgb(144,138,153);
+  --main-button-color: rgb(79,67,174);
+  --secondary-button-color: rgb(181,182,228);
+  --menu-button-color: rgb(33,26,33);
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
 .navbar {
-  background-color: rgb(144,138,153);
+  background-color: var(--secondary-bg-color);
+}
+
+sourceCode {
+  background-color: var(--secondary-bg-color);
 }
 
 #navbar a {
-  color: rgb(79,67,174);
+  color: var(--main-button-color);
+}
+
+a {
+  color: var(--main-button-color);
 }
 
 a:hover {
-  color: rgb(181,182,228);
+  color: var(--secondary-button-color);
 }
 
 
 a.navbar-link .fa .fa-home .fa-lg {
-  color: rgb(33,26,33);
+  color: var(--menu-button-color);
 }
+
+.navbar-link {
+  color: var(--menu-button-color);
+}
+
+
