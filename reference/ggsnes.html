@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Custom color and fill scales — scale_custom • ggsnes</title>
+<title>ggsnes package — ggsnes • ggsnes</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -48,8 +48,8 @@
   <link href="../extra.css" rel="stylesheet">
   
 
-<meta property="og:title" content="Custom color and fill scales — scale_custom" />
-<meta property="og:description" content="Custom coloring and filling functions based on unique color palettes" />
+<meta property="og:title" content="ggsnes package — ggsnes" />
+<meta property="og:description" content="A collection of 'ggplot2' color palettes and themes inspired by the Super Nintendo gaming console and several popular games for the Super Nintendo." />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -124,68 +124,21 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Custom color and fill scales</h1>
-    <small class="dont-index">Source: <a href='https://github.com/ha0ye/ggsnes/blob/master/R/infra-palette.R'><code>R/infra-palette.R</code></a></small>
-    <div class="hidden name"><code>scale_custom.Rd</code></div>
+    <h1><code>ggsnes</code> package</h1>
+    <small class="dont-index">Source: <a href='https://github.com/ha0ye/ggsnes/blob/master/R/ggsnes.R'><code>R/ggsnes.R</code></a></small>
+    <div class="hidden name"><code>ggsnes.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Custom coloring and filling functions based on unique color palettes</p>
+    <p>A collection of 'ggplot2' color palettes and themes inspired by the Super Nintendo gaming console and several popular games for the Super Nintendo.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>scale_color_discrete_snes</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, extend <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>...</span><span class='op'>)</span>
 
-<span class='fu'>scale_colour_discrete_snes</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, extend <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_fill_discrete_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, extend <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_color_opinionated_snes</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_colour_opinionated_snes</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, extend <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_fill_opinionated_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_color_diverging_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_colour_diverging_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_fill_diverging_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_color_continuous_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_colour_continuous_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>scale_fill_continuous_rtistic</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"test"</span>, <span class='va'>...</span><span class='op'>)</span></pre>
-
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>palette</th>
-      <td><p>Name of color palette</p></td>
-    </tr>
-    <tr>
-      <th>extend</th>
-      <td><p>Whether to extend discrete color palette to make sufficient colors for levels needed</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>Additional arguments to be passed to internal scale function</p></td>
-    </tr>
-    </table>
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Specific functions include:</p><ul>
-<li><p>scale_(color/colour/fill)_discrete_rtisticDiscrete palette with either fixed or dynamically extended number of shades</p></li>
-<li><p>scale_(color/colour/fill)_opinionated_rtisticDiscrete palette with specific values for "good", "bad", and "neutral"</p></li>
-<li><p>scale_(color/colour/fill)_diverging_rtisticContinuous diverging color palette</p></li>
-<li><p>scale_(color/colour/fill)_continuousCOntinuous color palette</p></li>
-</ul>
-
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
-
-    <p>https://en.wikipedia.org/wiki/Traffic_light</p>
+    <p>See the README on
+<a href='https://github.com/ha0ye/ggsnes'>GitHub</a></p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
